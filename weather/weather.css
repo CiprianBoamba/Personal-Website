@@ -1,0 +1,52 @@
+/*reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.card1 {
+  background-color: #87919E;
+  box-shadow: 0 5px 15px -5px #00000070;
+  border-radius: 4%;
+
+}
+
+.card2 {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+
+}
+
+
+/* 
+.elice svg {
+  width: 100%;
+} */
+
+.anime-test {
+  animation: spin 3s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.anime-test {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+}
+
+.ermes {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
