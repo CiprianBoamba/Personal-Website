@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
@@ -14,197 +16,191 @@
 </head>
 
 <body>
-  <!--search-->
-  <div class="container search">
-    <div class="row">
-      <div class="col-md-6 mx-auto">
-        <div class="card text-center">
-          <div class="card-header">
-            <h1>Weather</h1>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text ">
-              Please search using Latitude and Longitude (decimal degree),UK
-              postcode, US ZIP code,Canada postal code
-            </p>
-            <form id="search">
-              <div class="input-group">
-                <input type="text" class="form-control inputSearch" placeholder="Enter a city "
-                  aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
-                <div class="input-group-append" id="button-addon4">
-                  <button type="submit" class="btn btn-primary btn-info  bSearch">
-                    <i class="fas fa-search"></i>
-                  </button>
-                  <button type="button" class="btn btn-primary btn-info bGps">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </button>
+  <div class="myWeather">
+    <div class="container-weather mt-5">
+      <!--search-->
+      <div class="container search">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="card text-center searchCard mt-3">
+              <div class="card-header">
+                <h1>Weather</h1>
+              </div>
+              <div class="card-body ">
 
+                <form id="search">
+                  <div class="input-group">
+                    <input type="text" required class="form-control inputSearch rounded-pill"
+                      placeholder="Enter a city " aria-label="Recipient's username with two button addons"
+                      aria-describedby="button-addon4">
+                    <div class="input-group-append" id="button-addon4">
+                      <button type="submit" class="btn  btn-info rounded-circle ml-2 bSearch">
+                        <i class="fas fa-search"></i>
+                      </button>
+
+
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="ermes col-md-6 mx-auto">
+            <div class="alert alert-danger text-center mt-3">
+              City not found!Too Many Requests!
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="offline col-md-6">
+            <div class="alert alert-danger text-center mt-3">
+              Please check your internet conection !
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="ermes1 col-md-6">
+            <div class="alert alert-danger text-center mt-3">
+              City not found!
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--geocode-->
+      <div class="container coordinatsResults mt-3 mb-3">
+        <div class="row">
+          <div class="col-md-6 text-center mx-auto ">
+            <div class="card">
+              <div class="card-body test1 ">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!--Weather Details-->
+
+      <div class="container   mt-5">
+        <div class="row">
+          <div class="col-md-6 mx-auto ">
+
+            <div class="card weatherDetails mb-5">
+
+
+              <div class="card-body">
+                <div class="wicon"></div>
+                <h3 class="wlocation mb-2"></h3>
+                <div class=" d-flex flex-row justify-content-between">
+                  <h4 class=" wdesc pt-3"></h4>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn  bwicon" data-toggle="modal" data-target="#exampleModalCenter">
+                    <img id=" wicon" class="wicon" src="" alt="Weather icon" width="" height="">
+                  </button>
                 </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card noInput" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Sorry!</p>
-      <p class="card-text">Please type something</p>
-    </div>
-  </div>
-  <div class="container">
-    <button type="button" class="btn btn-primary btn-test test22">Primary</button>
-    <div class="anime-test">
-      <svg width="100" height="100" viewBox="0 0 550 550">
-        <defs>
-          <clipPath id="clip-Web_1920_1">
-            <rect width="550" height="550" />
-          </clipPath>
-        </defs>
-        <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
-          <rect width="550" height="550" fill="#fff" />
-          <g id="Group_1" data-name="Group 1" transform="translate(-134.558 96.355)">
-            <rect id="Rectangle_1" data-name="Rectangle 1" width="500" height="500"
-              transform="translate(147.558 -63.355)" fill="#fff" opacity="0.97" />
-            <g id="Group_2" data-name="Group 2" transform="translate(163 -35)">
-              <path id="Path_2" data-name="Path 2"
-                d="M367.7,335.91s-17.425,20.456-.758,52.528c-103.79,1.01-200.01-14.142-201.78-25.759S288.652,334.9,367.7,335.91Z"
-                transform="translate(-165.144 -151.391)" fill="#333" fill-rule="evenodd" />
-              <path id="Path_3" data-name="Path 3"
-                d="M439.42,362.18a26.012,26.012,0,1,1-26.011-26.264A26.138,26.138,0,0,1,439.42,362.18Z"
-                transform="translate(-167.443 -151.391)" fill="#333" />
-              <path id="Path_5" data-name="Path 5"
-                d="M413.19,414.8s26.424,4.882,45.888-25.575c52.707,89.421,87.627,180.35,78.445,187.68s-85.735-93.119-124.33-162.11Z"
-                transform="translate(-168.473 -153.995)" fill="#333" fill-rule="evenodd" />
-              <path id="Path_6" data-name="Path 6"
-                d="M459.48,337.81s-9.016-25.314-45.126-26.9c50.973-90.42,112.16-166.2,123.11-161.93s-37.623,120.86-77.984,188.83Z"
-                transform="translate(-168.473 -148.812)" fill="#333" fill-rule="evenodd" />
-            </g>
-          </g>
-        </g>
-      </svg>
-
-    </div>
-  </div>
-  <div class="ermes">
-    <p>test</p>
-  </div>
-
-  <!--location-->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 mt-3">
-        <div class="card ">
-          <div class="card-body mx-auto">
-            <h3 class="location">Location</h3>
-            <p class="country">Country</p>
-            <p class="time">Time</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 mt-3">
-        <div class="card details card2">
-          <div class="card-body d-flex justify-content-around">
-            <div class="image">
-              <img class=" w-icon" />
-            </div>
-            <div class="details1 mx-center">
-              <div class="current"></div>
-              <div class="d-flex justify-content-end">
-                <div class="temperature mx-center">Temperature</div>
-                <div>&#8451</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--details-->
-  <div class="container details">
-    <div class="row">
-
-      <div class="col-md-6 mx-auto">
-        <div class="details mt-3 mb-3">
-          <h4>Details</h4>
-          <hr />
-          <ul class="list-group lgDetails">
-            <li class="list-group-item d-flex justify-content-between">
-              <div class="">Feels like</div>
-              <div class="d-flex justify-content-end">
-                <div class="feels-like "></div>
-                <div>&#176</div>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <div class="">Humidity</div>
-              <div class="d-flex justify-content-end">
-                <div class="humidity"></div>
-                <div>&#37</div>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <div class="">Visibility</div>
-              <div class="d-flex justify-content-end">
-                <div class="visibility"></div>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <div class="">UV Index</div>
-              <div class="d-flex justify-content-end">
-                <div class="uvindex"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-
-      </div>
-      <!--wind-->
-      <div class="col-md-6 ">
-        <div class="wind1">
-          <h3>Wind</h3>
-          <hr />
-        </div>
-        <div class="d-flex align-items-center">
-          <div class="wind-details"></div>
-          <div class="mills d-flex justify-content-left ">
-            <div>
-              <div class="mill1 d-flex justify-content-around">
-                <div class="elice">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="150" viewBox="0 0 300 331.841">
-                    <g id="mill" transform="translate(-124.144 -97.065)">
-                      <g id="poll" transform="translate(165.144 148.812)">
-                        <path id="Path_4" data-name="Path 4" d="M387.14,423.08h22.9V582.735h-22.9Z"
-                          transform="translate(-289.655 -302.641)" fill="#333" />
-                      </g>
-                      <g id="wind-mill" class="milltest" transform="translate(-284.856 25.065)">
-                        <path id="Path_7" data-name="Path 7" d="M0,0H300V300H0Z" transform="translate(409 72)"
-                          fill="none" />
-                        <path id="Path_2" data-name="Path 2"
-                          d="M254.092,335.885s-7.652,8.983-.333,23.067c-45.577.444-87.83-6.21-88.607-11.312s54.228-12.2,88.941-11.755Z"
-                          transform="translate(906.894 -52.412) rotate(90)" fill="#333" fill-rule="evenodd" />
-                        <path id="Path_3" data-name="Path 3"
-                          d="M410.242,347.449a11.423,11.423,0,1,1-11.422-11.533,11.478,11.478,0,0,1,11.422,11.533Z"
-                          transform="translate(906.923 -177.068) rotate(90)" fill="#333" />
-                        <path id="Path_5" data-name="Path 5"
-                          d="M413.19,400.456s11.6,2.144,20.151-11.231c23.145,39.267,38.48,79.2,34.447,82.416s-37.649-40.891-54.6-71.187Z"
-                          transform="translate(936.822 -191.534) rotate(90)" fill="#333" fill-rule="evenodd" />
-                        <path id="Path_6" data-name="Path 6"
-                          d="M434.17,231.806S430.211,220.69,414.354,220c22.384-39.706,49.253-72.983,54.061-71.108s-16.521,53.073-34.245,82.921Z"
-                          transform="translate(802.982 -193.187) rotate(90)" fill="#333" fill-rule="evenodd" />
-                      </g>
-                    </g>
-                  </svg>
+                <div class=" d-flex flex-row justify-content-between">
+                  <h5 class="card-text wdate pt-3"></h5>
+                  <h1 class="wdegree"></h1>
                 </div>
 
+
               </div>
+              <div class="wforecas text-center mb-2 ">
+                <button class="btn btn-outline-warning wforecast " type="button" data-toggle="collapse"
+                  data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Forecast
+                </button>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="collapse-content">
+
+                    <div class="collapse" id="collapseExample">
+
+
+                      <table class="table table-sm table-borderless">
+
+                        <tbody>
+                          <tr>
+                            <td class="fday1date  padl align-middle"></td>
+                            <td>
+                              <img id="wicon" class="fday1icon float-right" src="" alt="Weather icon">
+                            </td>
+                            <td class="fday1temp align-middle"></td>
+                          </tr>
+                          <tr>
+                            <td class="fday2date padl align-middle"></td>
+                            <td>
+                              <img id="wicon" class="fday2icon float-right" src="" alt="Weather icon">
+                            </td>
+                            <td class="fday2temp align-middle"></td>
+                          </tr>
+                          <tr>
+                            <td class="fday3date align-middle"></td>
+                            <td>
+                              <img id="wicon" class="fday3icon float-right" src="" alt="Weather icon">
+                            </td>
+                            <td class="fday3temp align-middle"></td>
+                          </tr>
+                          <tr>
+                            <td class="fday4date align-middle"></td>
+                            <td>
+                              <img id="wicon" class="fday4icon float-right" src="" alt="Weather icon">
+                            </td>
+                            <td class="fday4temp align-middle"></td>
+                          </tr>
+                          <tr>
+                            <td class="fday5date align-middle"></td>
+                            <td>
+                              <img id="wicon" class="fday5icon float-right" src="" alt="Weather icon">
+                            </td>
+                            <td class="fday5temp align-middle"></td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title " id="exampleModalCenterTitle ">Details</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class=" detailsw">
+                        <ul class="list-group text-center">
+                          <li class="list-group-item list-group-item-success wcloud"></li>
+                          <li class="list-group-item list-group-item-success wwind"></li>
+                          <li class="list-group-item list-group-item-success whumid"></li>
+                          <li class="list-group-item list-group-item-success wpress"></li>
+                        </ul>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -213,30 +209,40 @@
   </div>
 
 
-  <!--forecast-->
-  <div class="container">
+
+
+
+
+
+
+
+
+
+  <!--image-->
+  <div class="container weatherImage mt-4">
     <div class="row">
-      <div class="col-sm-12">
-        <div class="forecast mt-3">
-          <h3>Forecast</h3>
-          <hr />
+      <div class="col-md-10 mx-auto ">
+        <div class="text-center">
+          <img src="/weather/imagw/weather-img.svg" class="img-fluid " alt="Responsive image">
 
-          <div class="test row">
-
-          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
+
+  <!--footer-->
+  <footer class="footer text-white">
+    <div class="d-flex justify-content-center align-items-center">
+      <p class="my-2 m-0">Ciprian Boamba &copy2020</p>
+    </div>
+  </footer>
 
 
 
 
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
@@ -245,6 +251,9 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script src="skycons.js"></script>
   <script src="weather.js"></script>
 </body>
 

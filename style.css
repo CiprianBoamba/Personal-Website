@@ -7,33 +7,144 @@
 
 /*NAVBAR*/
 
-/*button navbar*/
+.navbar-light .navbar-toggler {
+
+  border-color: none;
+}
+
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+
+li {
+  padding: 0px 21px;
+  margin: 0px -1px 0px 0px;
+}
+
+a {
+  font-size: 19px;
+  color: black;
+  margin: 0px -1px 0px 0px
+}
+
+.btnNav {
+  position: relative;
+  color: #000;
+}
 
 .btnNav:hover {
-  background: #e8e4d8;
-  border-radius: 10%;
-  box-shadow: 0 5px 15px -5px #00000070;
+  color: #000;
 }
+
+.btnNav:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e55039;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.btnNav:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+p {
+  font-weight: 500;
+}
+
+
 /*HEADER*/
 #header {
   padding-top: 60px;
   background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  min-height: 100vh;
 }
+
+.cH {
+  padding: 255px 0px;
+}
+
 .rowH {
-  padding-top: 50px;
   justify-content: center;
   text-align: center;
 }
+
 .nameH {
-  padding-top: 40px;
   color: #013644;
 }
 
-.imageH {
-  padding: 40px 40px;
-}
 
 /*buton online*/
+
+.test li {
+  list-style: none;
+}
+
+.test li a {
+  width: 72px;
+  height: 72px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 67px;
+  font-size: 33px;
+
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.test li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.test li a:hover .icon {
+  color: #fff;
+}
+
+.test li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.test li a:hover:before {
+  top: 0;
+}
+
+.test li:nth-child(1) a:before {
+  background: #24292e;
+}
+
+.test li:nth-child(2) a:before {
+  background: #55acee;
+}
+
+.test li:nth-child(3) a:before {
+  background: #6e5494;
+}
+
+
 .btnH {
   display: inline-block;
   width: 60px;
@@ -46,15 +157,18 @@
   overflow: hidden;
   position: relative;
 }
+
 .btnH i {
   line-height: 60px;
   font-size: 28px;
   transition: 0.2s linear;
 }
+
 .btnH:hover i {
   transform: scale(1.2);
   color: #ecf0f1;
 }
+
 .btnH:before {
   content: "";
   position: absolute;
@@ -65,20 +179,24 @@
   left: -110%;
   top: 90%;
 }
+
 .btnH:hover:before {
   animation: aaa 0.7s 1;
   top: -10%;
   left: -10%;
 }
+
 @keyframes aaa {
   0% {
     left: -110%;
     top: 90%;
   }
+
   50% {
     left: 10%;
     top: -30%;
   }
+
   100% {
     top: -10%;
     left: -10%;
@@ -91,9 +209,24 @@
   padding: 80px;
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
+
+.Abth1 {
+  border-bottom: 3px solid #A19EDD;
+  display: inline-block;
+}
+
+.cAMe {
+  padding: 68px 0px;
+}
+
+
+
 .aboutmeText {
   justify-content: center;
-  text-align: center;
+  text-align: justify;
+  padding: 20px 30px;
+  line-height: 1.5em;
+  color: #3b3634;
 }
 
 .img-aboutme {
@@ -101,89 +234,269 @@
   justify-content: center;
   text-align: center;
 }
-.imageskills {
-  width: 66px;
-  margin: 14px;
+
+
+/*PROJECTS*/
+#projects {
+  background-color: #6a89cc;
 }
+
+.margin-top {
+  padding-top: 200px;
+}
+
+.projects-title {
+  padding: 52px 0px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0px;
+}
+
+.skill {
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid rgba(250, 109, 104, 0.6);
+  border-radius: 20px;
+  color: #ce1711;
+  padding: 2px 8px;
+  margin: 8px;
+}
+
 /*WEATHER*/
+.weatherProject {
+  padding: 120px 0;
+}
+
+
+.weatherDesc p {
+  text-align: justify;
+  color: #54504d;
+
+}
+
+.myWeather {
+  background-color: #F6F6F6;
+  margin: 20px;
+
+}
+
+.mya {
+  font-size: 16px;
+  color: #e55039;
+}
+
+.mya:hover {
+  text-decoration: none;
+}
+
+.geoa {
+  color: #0d966a;
+}
+
+.opena {
+  color: #ea6e4b;
+}
+
+
+
+
+
+
+
+.btn-changeW {
+  height: 50px;
+  width: 100px;
+  background-color: transparent;
+  margin: 20px;
+  float: left;
+  border: 0px;
+  color: #fff;
+  box-shadow: 0 0 1px #ccc;
+  transition: 0.25s ease-in-out;
+  box-shadow: 0px 0 0 #537895 inset;
+  border: 1px solid #537895
+}
+
+.btn-changeW i {
+  line-height: 49px;
+  font-size: 28px;
+  color: #537895;
+  transition: 0.2s linear;
+}
+
+.btn-changeW:hover {
+  box-shadow: 100px 0 0 #537895 inset;
+}
+
+.btn-changeW:hover i {
+  color: #F6F6F6;
+}
+
+
+
+
+
+
+
 /*GAME*/
-#game {
-  padding: 10px;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+.myGame {
+  background-color: #F6F6F6;
+  margin: 20px;
+
+
 }
 
-.containerGimag1 {
-  background: url(../img/chess-2730034_1920.jpg) no-repeat center center/cover;
-  width: 250px;
-  height: 250px;
-  border-radius: 10%;
-}
-.containerGimag1:hover {
-  transform: rotate(-20deg);
-  transform-style: preserve-3d;
-  transition: all 0.6s ease-in;
+.GameDesc p {
+  text-align: justify;
+  color: #54504d;
+
 }
 
-.containerGimag2 {
-  background: url(../img/trees-3464777_1920.jpg) no-repeat center center/cover;
-  width: 250px;
-  height: 250px;
-  border-radius: 10%;
+.gameProject {
+  padding: 120px 0;
 }
-.containerGimag2:hover {
-  transform: rotate(-20deg);
-  transform-style: preserve-3d;
-  transition: all 0.6s ease-in;
+
+.btn-changeG {
+  height: 50px;
+  width: 100px;
+  background-color: transparent;
+  margin: 20px;
+  float: left;
+  border: 0px;
+  color: #fff;
+  box-shadow: 0 0 1px #ccc;
+  transition: 0.25s ease-in-out;
+  box-shadow: 0px 0 0 #fff inset;
+  border: 1px solid #fff
 }
-.containerG {
-  width: 250px;
-  height: 250px;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-  position: relative;
-  perspective: 1000px;
-  text-align: center;
-  border-radius: 10%;
+
+.btn-changeG i {
+  line-height: 49px;
+  font-size: 28px;
+  color: #fff;
+  transition: 0.2s linear;
 }
-.coverG {
-  width: 250px;
-  height: 100%;
-  position: absolute;
-  transform: rotateY(0deg);
-  transform-style: preserve-3d;
-  transform-origin: left;
-  transition: all 0.6s ease-in;
-  border-radius: 10%;
+
+.btn-changeG:hover {
+  box-shadow: 100px 0 0 #fff inset;
 }
-.containerG:hover .coverG {
-  transform: rotateY(-180deg);
+
+.btn-changeG:hover i {
+  color: #223D5C;
 }
-figure {
-  margin: 0;
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-figure.front {
-  background: url(../img/light-bulb-3104355_1920.jpg) no-repeat center
-    center/cover;
-  border-radius: 10%;
-}
-figure.back {
-  background: url(../img/brain-20424.jpg) no-repeat center center/cover;
-  transform: rotateY(180deg);
-  border-radius: 10%;
-}
+
+
 
 /*RESUME*/
-#resume {
-  padding: 200px;
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+
+.example_e {
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
 }
-.textR {
-  text-align: center;
+
+.example_e:hover {
+  color: #404040 !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
 }
-.butonR {
+
+
+/*CONTACT ME*/
+#contactMe {
+
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  padding: 80px 0px 100px 0px;
+}
+
+
+
+
+
+.form-control {
+  font-weight: 500;
+}
+
+.form-control:focus {
+  border: none !important;
+  box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #A53B40;
+}
+
+#email,
+#message {
+  color: #a53b40;
+  font-weight: 500;
+}
+
+
+
+.cnth1 {
+  color: #754389;
+}
+
+.btncon {
+  font-weight: 500;
+  color: #fff;
+  background-color: #A53B40;
+  border-color: #A53B40;
+}
+
+.btncon:hover {
+  color: #fff;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer {
+  background-color: #2B2933;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
   text-align: center;
+  position: relative;
+}
+
+
+.btnFooter {
+  position: absolute;
+  display: inline-block;
+  color: #2b2933;
+  padding: 10px 5px;
+  top: -35px;
+  font-size: 14px;
+  transition: all 0.4s ease 0s
+}
+
+.btnFooter:hover {
+  letter-spacing: 0.8px;
 }

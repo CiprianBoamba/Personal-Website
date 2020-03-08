@@ -1,0 +1,51 @@
+@media only screen and (max-width: 767px) {
+
+  /*HEADER*/
+  #header {
+    padding-top: 0px;
+  }
+
+  .rowH {
+    /* padding: 100px 0px; */
+    padding: 20px 0px;
+  }
+
+  .imageH {
+    display: none;
+  }
+
+
+
+  /*ABOUT ME*/
+  .aboutmeText {
+    padding-top: 50px;
+  }
+
+  .img-aboutme {
+    margin-left: 20px;
+  }
+
+  /*---- CONTACT ME ---- */
+
+  .testcontactme {
+    display: none;
+  }
+
+  /*PROJECT:WEATHER*/
+
+
+  .mobileW,
+  .mobileG {
+    display: block;
+  }
+
+  .tabletW,
+  .tabletG {
+    display: none;
+  }
+
+  .laptopW,
+  .laptopG {
+    display: none;
+  }
+}

@@ -3,50 +3,74 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
 
 }
 
-.card1 {
-  background-color: #87919E;
-  box-shadow: 0 5px 15px -5px #00000070;
-  border-radius: 4%;
-
-}
-
-.card2 {
-  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(60deg, #64b3f4, #c2e59c);
+  background-repeat: no-repeat;
 }
 
 
-/* 
-.elice svg {
+.ermes,
+.ermes1,
+.offline {
+  display: none;
+}
+
+.coordinatsResults {
+  display: none;
+}
+
+
+
+/*search weather*/
+.searchCard {
+  border: none !important;
+}
+
+/*Weather Details*/
+
+.card {
+  border: none !important;
+}
+
+.weatherDetails {
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.mycard {
+  border: none !important;
+  border-radius: 20px;
+}
+
+.wdegree {
+  font-family: Poiret One;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/*weather image*/
+.img-fluid {
+  max-width: 70%;
+}
+
+/*footer*/
+.footer {
+
+  background-color: #57606f;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
-} */
-
-.anime-test {
-  animation: spin 3s linear infinite;
-  transform-origin: center;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg)
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.anime-test {
-  background-color: aqua;
-  width: 100px;
-  height: 100px;
-}
-
-.ermes {
-  width: 100px;
-  height: 100px;
-  background-color: green;
+  color: white;
+  text-align: center;
 }

@@ -1,0 +1,45 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .mobileW,
+  .mobileG {
+    display: none;
+  }
+
+  .tabletW,
+  .tabletG {
+    display: block;
+  }
+
+  .laptopW,
+  .laptopG {
+    display: none;
+    ;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+
+  .mobileW,
+  .mobileG {
+    display: none;
+  }
+
+  .tabletW,
+  .tabletG {
+    display: none;
+  }
+
+  .laptopW,
+  .laptopG {
+    display: block;
+
+  }
+}
