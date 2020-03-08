@@ -119,12 +119,12 @@ const projectController1 = new ScrollMagic.Controller();
 
 tlproject1.from(".projects-title", 1, {
   opacity: 0,
-  y: -80,
+  y: 100,
   ease: "sine.out"
 })
 tlproject1.from(".myWeather", 1, {
   opacity: 0,
-  y: -100,
+  y: 120,
   ease: "sine.out"
 }, "-=.8")
 
@@ -144,7 +144,7 @@ const projectController2 = new ScrollMagic.Controller();
 
 tlproject2.from(".myGame", 1, {
   opacity: 0,
-  y: -100,
+  y: 120,
   ease: "sine.out"
 })
 const sceneProject12 = new ScrollMagic.Scene({
