@@ -224,7 +224,7 @@ p {
 .aboutmeText {
   justify-content: center;
   text-align: justify;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
   line-height: 1.5em;
   color: #3b3634;
 }
