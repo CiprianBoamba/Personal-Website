@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
 /*NAVBAR*/
 
 .navbar-light .navbar-toggler {
@@ -224,13 +229,12 @@ p {
 .aboutmeText {
   justify-content: center;
   text-align: justify;
-  /* padding: 20px 30px; */
   line-height: 1.5em;
   color: #3b3634;
 }
 
 .img-aboutme {
-  width: 500px;
+  /* width: 500px; */
   justify-content: center;
   text-align: center;
 }

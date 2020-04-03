@@ -1,12 +1,14 @@
 @media only screen and (max-width: 767px) {
 
   /*HEADER*/
+
+
+
   #header {
     padding-top: 0px;
   }
 
   .rowH {
-    /* padding: 100px 0px; */
     padding: 20px 0px;
   }
 
@@ -18,12 +20,12 @@
 
   /*ABOUT ME*/
 
-
+  #aboutMe {
+    padding: 8px;
+  }
 
   .aboutmeText {
     padding-top: 50px;
-    width: 300px;
-    margin-left: -44px;
   }
 
   .img-aboutme {
